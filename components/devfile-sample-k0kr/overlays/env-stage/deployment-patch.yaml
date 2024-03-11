@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-k0kr
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/sbudhwar-1-tenant/hac-dev/devfile-sample-k0kr@sha256:fc4ca255bf621099209809c2c0d4c8e45b8c214887297c0868df704ecc9ec89a
+        name: my-nodejs
+        resources: {}
+status: {}
